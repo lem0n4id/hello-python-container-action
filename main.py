@@ -10,6 +10,7 @@ def main():
     # "::" is a special syntax to run the workflow commands.
     # https://docs.github.com/en/actions/learn-github-actions/workflow-commands-for-github-actions#using-workflow-commands-to-access-toolkit-functions
     print(f"::set-output name=myOutput::{my_output}")
+    print("hello world!")
 
 
 if __name__ == "__main__":
