@@ -83,3 +83,19 @@ steps:
     run: |
     echo "Outputs - ${{ steps.myaction.outputs.myOutput }}"
 ```
+
+## Notes for people who are new to github actions:
+
+1. **Github contexts**
+> GitHub Actions includes a collection of *variables* called contexts. - [docs](https://docs.github.com/en/actions/learn-github-actions/contexts#determining-when-to-use-contexts)
+
+> Contexts are a way to access information about workflow runs, runner environments, jobs, and steps. - [docs](https://docs.github.com/en/actions/learn-github-actions/contexts#about-contexts)
+
+> For example, `steps.<step id>.outputs` is the set of outputs defined for the step. They allow you to declare data that an action sets.
+>
+> Here, `steps.myaction.outputs.myOutput` is a output that is defined in the action metadata [here](https://github.com/lem0n4id/hello-python-container-action/blob/master/action.yml#L9). Learn more about it in [Metadata docs](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions)
+
+2. Workflow commands syntax for GitHub Actions
+> "::" is a special syntax to run the workflow commands. - [docs](https://docs.github.com/en/actions/learn-github-actions/workflow-commands-for-github-actions#using-workflow-commands-to-access-toolkit-functions)
+>
+> Example: [setting myOutput in main.py](https://github.com/lem0n4id/hello-python-container-action/blob/master/main.py#L10)

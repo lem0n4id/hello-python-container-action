@@ -7,6 +7,8 @@ def main():
 
     my_output = f"Hello {my_input}"
 
+    # "::" is a special syntax to run the workflow commands.
+    # https://docs.github.com/en/actions/learn-github-actions/workflow-commands-for-github-actions#using-workflow-commands-to-access-toolkit-functions
     print(f"::set-output name=myOutput::{my_output}")
 
 
