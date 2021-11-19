@@ -8,7 +8,7 @@ jobs:
       - name: Self test
         id: selftest
 
-        uses: lem0n4id/hello-python-container-action@master
+        uses: lem0n4id/hello-python-container-action@dev
 
       - name: Check outputs
         run: |
