@@ -1,13 +1,6 @@
-name: "Python Container Action Template"
+name: "Hello Python Container Action"
 description: "Get started with Python Container actions"
-author: "Jacob Tomlinson"
-inputs:
-  myInput:
-    description: "Input to use"
-    default: "world"
-outputs:
-  myOutput:
-    description: "Output from the action"
+author: "Lenin Kennedy"
 runs:
   using: "docker"
   image: "Dockerfile"
