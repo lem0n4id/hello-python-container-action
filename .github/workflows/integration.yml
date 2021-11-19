@@ -8,7 +8,7 @@ jobs:
       - name: Self test
         id: selftest
 
-        uses: lem0n4id/hello-python-container-action@master
+        uses: lem0n4id/hello-python-container-action@test-github-workflow
       - name: Check outputs
         run: |
           test "${{ steps.selftest.outputs.myOutput }}" == "Hello world"
